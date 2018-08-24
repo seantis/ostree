@@ -24,6 +24,7 @@ setup(
     version=version,
     description=description,
     long_description=get_long_description(),
+    long_description_content_type='text/markdown',
     url='http://github.com/seantis/ostree',
     author='Seantis GmbH',
     author_email='info@seantis.ch',
