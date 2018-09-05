@@ -1,9 +1,11 @@
+import os
+
 from pathlib import Path
 from ostree.oci import extract_oci_layers
 
 
 def ensure_folder(path):
-    path.mkdir(exist_ok=True)
+    os.makedirs(path, exist_ok=True)
     return path
 
 

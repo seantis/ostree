@@ -1,6 +1,14 @@
 import click
+import os
 import ostree.remote
 import ostree.local
+
+
+def default_cache_dir():
+    if os.getuid() == 0:
+        return '/var/cache/ostree'
+    else:
+        return os.path.expanduser('~/.cache/seantis/ostree')
 
 
 @click.group()
@@ -11,7 +19,7 @@ def cli():
 def with_cache(fn):
     return click.option(
         '--cache', help="The cache directory",
-        default='/var/cache/ostree',
+        default=default_cache_dir(),
         envvar='OSTREE_CACHE'
     )(fn)
 

@@ -1,5 +1,8 @@
 # Changelog
 
+- Changes the cache path to `~/.cache/seantis/ostree` for non-root users.
+  [href]
+
 - Sets the default protocol to docker.
   [href]
 
