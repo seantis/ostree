@@ -1,5 +1,11 @@
-def from_address(address):
-    protocol, image = address.split('://')
+def from_address(address, default_protocol=None):
+    if '://' in address:
+        protocol, image = address.split('://')
+    elif default_protocol:
+        protocol = default_protocol
+        image = address
+    else:
+        raise RuntimeError(f'No protocol given')
 
     if protocol not in RemoteImage.protocols:
         raise RuntimeError(f'Unknown protocol: {protocol}')
