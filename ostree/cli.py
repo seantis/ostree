@@ -40,7 +40,7 @@ def pull(address, destination, cache):
 
     """
 
-    image = ostree.remote.from_address(address, default_protocol='docker')
+    image = ostree.remote.from_address(address)
 
     local = ostree.local.Cache(cache)
     local.pull(image, destination)
