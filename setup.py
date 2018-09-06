@@ -36,6 +36,7 @@ setup(
     platforms='any',
     install_requires=[
         'cached_property',
+        'click',
         'google-auth',
         'requests',
     ],
