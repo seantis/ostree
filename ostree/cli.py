@@ -58,7 +58,7 @@ def with_cache(fn):
 def with_auth(fn):
     return click.option(
         '--auth',
-        help="A token, user:password combo, or the path to a keyfile.",
+        help="A token or the path to a keyfile.",
         default=None
     )(fn)
 

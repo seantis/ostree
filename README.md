@@ -25,6 +25,13 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 This is alpha-quality software. Things are intended to break.
 
+## Supported Registries
+
+The following registries are currently supported:
+
+* Docker (public registry only)
+* Google Container Registry (public, private with service account and json keyfile)
+
 ## Requirements
 
 * POSIX
