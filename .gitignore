@@ -54,3 +54,6 @@ target/
 
 # Pytest cache
 .pytest_cache/
+
+# Local test folder for images
+images/

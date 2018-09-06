@@ -36,8 +36,8 @@ setup(
     platforms='any',
     install_requires=[
         'cached_property',
-        'click',
-        'pycurl'
+        'google-auth',
+        'requests',
     ],
     extras_require=dict(
         test=[

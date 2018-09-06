@@ -20,7 +20,7 @@ class Cache(object):
 
     def pull(self, image, destination):
         destination = Path(destination)
-        destination.mkdir(exist_ok=False)
+        destination.mkdir(parents=True, exist_ok=False)
 
         files = []
 

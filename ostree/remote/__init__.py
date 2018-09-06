@@ -1,9 +1,16 @@
-from .base import RemoteImage, from_address
+from .base import RemoteImage
+from .base import RemoteAuth
+
+from .docker import DockerIdentity
+from .docker import GCRAuth
+from .docker import PublicDockerAuth
 from .docker import RemoteDockerImage
 
-
 __all__ = (
-    'from_address',
-    'RemoteImage',
+    'DockerIdentity',
+    'GCRAuth',
+    'PublicDockerAuth',
+    'RemoteAuth',
     'RemoteDockerImage',
+    'RemoteImage',
 )

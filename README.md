@@ -5,7 +5,7 @@ Pulls containers and turns them into OS trees for systemd-nspawn.
 You can pull a Docker container:
 ```bash
 pip install ostree
-ostree pull docker://python:3.7-alpine ./alpine
+ostree pull python:3.7-alpine ./alpine
 ```
 
 And run it with systemd-nspawn:
