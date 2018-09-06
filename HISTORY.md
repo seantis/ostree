@@ -1,5 +1,11 @@
 # Changelog
 
+- Adds support for Google Container Registry.
+  [href]
+
+- Implements cache purging.
+  [href]
+
 - Shows an error if no protocol is given.
   [href]
 
