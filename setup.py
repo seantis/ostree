@@ -6,7 +6,7 @@ name = 'ostree'
 description = (
     'Pulls containers and turns them into OS trees for systemd-nspawn.'
 )
-version = '0.1.0'
+version = '0.1.1'
 
 
 def get_long_description():

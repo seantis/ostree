@@ -1,6 +1,9 @@
 Changelog
 =========
 
+0.1.1 (2018-09-07)
+------------------
+
 - Adds environment variables for OSTREE_AUTH, OSTREE_CACHE and OSTREE_PROTOCOL.
   [href]
 
