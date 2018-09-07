@@ -51,7 +51,8 @@ def with_cache(fn):
     return click.option(
         '--cache',
         help="The cache directory. May be a path or the keyword 'no'",
-        default=default_cache_dir()
+        default=default_cache_dir(),
+        envvar='OSTREE_CACHE'
     )(fn)
 
 
@@ -59,14 +60,16 @@ def with_auth(fn):
     return click.option(
         '--auth',
         help="A token or the path to a keyfile.",
-        default=None
+        default=None,
+        envvar='OSTREE_AUTH'
     )(fn)
 
 
 def with_protocol(fn):
     return click.option(
         '--protocol', help="The image protocol in use (only docker for now)",
-        default='docker', type=click.Choice(available_protocols())
+        default='docker', type=click.Choice(available_protocols()),
+        envvar='OSTREE_PROTOCOL'
     )(fn)
 
 
